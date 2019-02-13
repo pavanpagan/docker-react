@@ -1,0 +1,13 @@
+version : '2.0'
+services:
+    web:
+      build: 
+          context: .
+          dockerfile: Dockerfile.dev
+
+      ports:
+          - "3001:3001"
+      volumes:
+          - /app/node_modules
+          - .:/app
+          
