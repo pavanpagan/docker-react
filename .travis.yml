@@ -3,4 +3,5 @@ service:
     - docker
 before_install:
     - gem install bundler
+    - gem install rake
     - docker build -t pavanpagan/docker-react -f Dockerfile.dev .
