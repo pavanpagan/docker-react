@@ -4,5 +4,3 @@ service:
 before_install:
     - docker build -t pavanpagan/docker-react -f Dockerfile.dev .
 
-# script: 
-#     - docker run pavanpagan/docker-react npm run test -- --coverage
