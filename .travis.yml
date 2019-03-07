@@ -4,5 +4,20 @@ service:
 before_install:
     - gem install bundler
     - gem update bundler
+    - bundle install
     - docker build -t pavanpagan/docker-react -f Dockerfile.dev .
-
+gemfile:
+  - gemfiles/rails_4.0.0.gemfile
+  - gemfiles/rails_4.0.2.gemfile
+  - gemfiles/rails_4.1.1.gemfile
+  - gemfiles/rails_4.1.4.gemfile
+  - gemfiles/rails_4.1.9.gemfile
+  - gemfiles/rails_4.2.0.gemfile
+  - gemfiles/rails_4.2.1.gemfile
+  - gemfiles/rails_4.2.2.gemfile
+  - gemfiles/rails_4.2.3.gemfile
+  - gemfiles/rails_4.2.4.gemfile
+  - gemfiles/rails_4.2.4.gemfile
+  - gemfiles/rails_4.2.5.gemfile
+  - gemfiles/rails_4.2.6.gemfile
+  - gemfiles/rails_5.0.0.gemfile
