@@ -2,7 +2,7 @@ sudo: required
 service: 
     - docker
 before_install:
-    - gem install bundler
-    - gem install rake
+    - sudo gem install bundler
+    - sudo gem install rake
     - docker build -t pavanpagan/docker-react -f Dockerfile.dev .
 
