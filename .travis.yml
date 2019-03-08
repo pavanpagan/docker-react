@@ -1,8 +1,17 @@
 sudo: required
 services: 
     - docker
+matrix:
+  include:
+  - rvm: 2.5
+    gemfile: gemfiles/Gemfile.rails-3.2.x
+    env: ISOLATED=false
+  - rvm: 2.5
+    gemfile: gemfiles/Gemfile.rails-3.2.x
+    env: ISOLATED=true
+    
 before_install:
-    -  npm install bundler
+    -  gem install bundler
     -  docker build -t pavanpagan/docker-react -f Dockerfile.dev .
 script: 
     - bundle exec rake spec
