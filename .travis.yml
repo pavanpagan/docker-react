@@ -1,8 +1,11 @@
 sudo: required
 services: 
     - docker
+rvm:
+    - 2.2
+    - 2.3
 before_install:
-    - sudo gem install bundler
-    - sudo docker build -t pavanpagan/docker-react -f Dockerfile.dev .
+    -  gem install bundler
+    -  docker build -t pavanpagan/docker-react -f Dockerfile.dev .
 script: 
     - bundle exec rake spec
