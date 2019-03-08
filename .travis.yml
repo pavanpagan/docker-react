@@ -2,4 +2,4 @@ sudo: required
 services: 
     - docker
 before_install:
-    - docker build -t pavanpagan/docker-react -f Dockerfile.dev .
+    - sudo docker build -t pavanpagan/docker-react -f Dockerfile.dev .
