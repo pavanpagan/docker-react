@@ -4,10 +4,7 @@
   "private": true,
   "dependencies": {
     "react": "^16.5.2",
-    "react-bootstrap": "^0.32.4",
-    "react-bootstrap-sweetalert": "^4.4.1",
     "react-dom": "^16.5.2",
-    "react-icons-kit": "^1.2.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.4"
   },
