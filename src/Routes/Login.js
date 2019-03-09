@@ -4,7 +4,7 @@ import {withRouter } from "react-router-dom";
 
 import { Grid, Row, Col } from "react-bootstrap";
 
-const API_URL = process.env.REACT_APP_API_URL;
+// const API_URL = process.env.REACT_APP_API_URL;
 
 class Login extends Component 
 {
